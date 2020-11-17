@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<style>
+.container{overflow: hidden;}
+.tab{float: left;}
+.tab-2{margin-top: 20px;}
+.tab-2 input{display: block; margin-bottom: 10px;}
+tr{transition: all .25s ease-in-out;}
+tr:hover{background-color: #eee; cursor: pointer;}
+table td{
+	padding: 20px;
+	border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="elem" border="1"></div>
+		<p id="suma"></p>
+		<div class="tab tab-2">
+			Name:<input type="text" name="Name" id="name">
+			SurName:<input type="text" name="SurName" id="sname">
+			Age:<input type="number" name="Age" id="age">
+			Mark:<input type="number" name="Mark" id="mark">
+
+			<button onclick="addHTMLtableRow();">Add</button>
+			<button onclick="editHtmlTableSelectedRow();">Edit</button>
+			<button onclick="removeSelectedRow();">Remove</button>
+			<button onclick="CountAverageMark();">Count</button>
+		</div>
+	</div>
+    <script src="Js.js"></script>
+
+</body>
+</html>
